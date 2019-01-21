@@ -1,0 +1,48 @@
+# the following two lines give a two-line status, with the current window highlighted
+hardstatus alwayslastline
+
+# Create a new screen tab
+screen -t node 0 bash
+stuff "cd /opt/les_demo \015"
+stuff "tail -f nodejs.log \015"
+
+# Create a new screen tab
+screen -t gateway 1 bash
+stuff "cd /opt/iotservices \015"
+stuff "tail -f gateway_output.log \015"
+
+# Create a new screen tab
+screen -t src 2 bash
+stuff "cd /opt/les_demo \015"
+
+# Create a new screen tab
+screen -t config 3 bash
+stuff "cd /opt/iotservices/config \015"
+stuff "cat config_gateway_*.xml \015"
+
+# Create a new screen tab
+screen -t log 4 bash
+stuff "cd /opt/edgeservices/dep_iot_edge/log \015"
+
+# Create a new screen tab
+screen -t exec 5 bash
+stuff "cd /opt/les_demo \015"
+
+# Create a new screen tab
+screen -t docker 6 bash
+stuff "cd /opt/EdgeServices_docker \015"
+stuff "docker ps \015"
+
+# Create a new screen tab
+screen -t bef 7 bash
+stuff "cd /opt \015"
+
+# Switch to window
+select 5
+
+# Name this screen instance
+sessionname Fish
+
+# Display a menu of screen tabs for the user to choose
+windowlist -b
+

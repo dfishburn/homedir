@@ -1,0 +1,13 @@
+[color]
+    ui = true
+	
+[core]
+    autocrlf = input
+	eol = lf
+	
+[push]
+    default = simple
+
+[user]
+	email = david.fishburn@sap.com
+	name = David Fishburn

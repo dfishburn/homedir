@@ -1,0 +1,10 @@
+*
+!/bin
+!.bashrc
+!.gitignore
+!.gitconfig
+!.inputrc
+!**/.placeholder
+!.profile
+!.screenc
+!.vimrc
