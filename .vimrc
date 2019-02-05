@@ -192,10 +192,10 @@ function! MyDiff()
 endfunction
 
 
-echo winwidth(0) winwidth(1) winwidth(2) winwidth(3)
+" echo winwidth(0) winwidth(1) winwidth(2) winwidth(3)
 
 
-Suggested minimal plugins:
+" Suggested minimal plugins:
 
 
 " BufExplorer mappings  /*{{{*/
