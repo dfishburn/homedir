@@ -358,7 +358,7 @@ endfunction
              \ 'b:subsubsections',
              \ 'P:paragraphs',
              \ 'G:subparagraphs',
-             \ 'l:labels',,b
+             \ 'l:labels',
              \ 'i:includes'
              \ ]
              \ }
