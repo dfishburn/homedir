@@ -6,7 +6,8 @@ the tools necessary to build a GUI vim.
 If will only run, if it determines Vim has not been built
 and installed yet.';
 
-vimTestDir=/var/tmp/user$uid/vim8_from_git/vim8
+uid=`id|awk -F'[()=]' '{ print $2}'`
+vimTestDir=/var/tmp/user${uid}/vim8_from_git/vim8
 if [ -d ${vimTestDir} ]; then
     echo "Vim8 has already been built and probably deployed:${vimTestDir}" 
     exit 0
